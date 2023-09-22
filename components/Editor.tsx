@@ -13,9 +13,14 @@ import '@mantine/tiptap/styles.css'
 type EditorPropps = {
   content: string
   onContent: (content: string) => void
+  onProcess: (content: string) => void
 }
 
-export default function Editor({ content, onContent }: EditorPropps) {
+export default function Editor({
+  content,
+  onContent,
+  onProcess,
+}: EditorPropps) {
   // const content = `test`;
   const editor = useEditor({
     extensions: [
@@ -31,7 +36,8 @@ export default function Editor({ content, onContent }: EditorPropps) {
   })
 
   const handleOk = () => {
-    onContent(editor?.getHTML() || '')
+    // onContent(editor?.getHTML() || '')
+    onProcess?.(editor?.getHTML() || '')
   }
 
   return (

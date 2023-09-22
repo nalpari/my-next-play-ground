@@ -12,12 +12,12 @@ const theme = createTheme({
 
 export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter()
-  const [isLogin, setIsLogin] = useState(false)
-  useEffect(() => {
-    if (!isLogin) {
-      router.push('/login')
-    }
-  }, [])
+  // const [isLogin, setIsLogin] = useState(false)
+  // useEffect(() => {
+  //   if (!isLogin) {
+  //     router.push('/login')
+  //   }
+  // }, [])
 
   return (
     <>

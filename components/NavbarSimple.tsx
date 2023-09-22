@@ -14,6 +14,7 @@ import {
   IconLogout,
   IconHomeMove,
   IconBrandVscode,
+  IconNews,
 } from '@tabler/icons-react'
 import { MantineLogo } from '@mantine/ds'
 import classes from './NavbarSimple.module.css'
@@ -21,6 +22,7 @@ import classes from './NavbarSimple.module.css'
 const data = [
   { link: '/', label: 'Home', icon: IconHomeMove },
   { link: '/editor', label: 'Editor', icon: IconBrandVscode },
+  { link: '/notice', label: 'Notice', icon: IconNews },
   { link: '', label: 'Notifications', icon: IconBellRinging },
   { link: '', label: 'Billing', icon: IconReceipt2 },
   { link: '', label: 'Security', icon: IconFingerprint },
