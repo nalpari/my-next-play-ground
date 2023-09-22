@@ -1,20 +1,19 @@
-import { Box, Button } from "@mantine/core";
-import { Link, RichTextEditor } from "@mantine/tiptap";
-import { useEditor } from "@tiptap/react";
-import Highlight from "@tiptap/extension-highlight";
-import StarterKit from "@tiptap/starter-kit";
-import Underline from "@tiptap/extension-underline";
-import TextAlign from "@tiptap/extension-text-align";
-import Superscript from "@tiptap/extension-superscript";
-import SubScript from "@tiptap/extension-subscript";
-import BtnConfirm from "./BtnConfirm";
+import { Link, RichTextEditor } from '@mantine/tiptap'
+import { useEditor } from '@tiptap/react'
+import Highlight from '@tiptap/extension-highlight'
+import StarterKit from '@tiptap/starter-kit'
+import Underline from '@tiptap/extension-underline'
+import TextAlign from '@tiptap/extension-text-align'
+import Superscript from '@tiptap/extension-superscript'
+import SubScript from '@tiptap/extension-subscript'
+import BtnConfirm from './BtnConfirm'
 
-import "@mantine/tiptap/styles.css";
+import '@mantine/tiptap/styles.css'
 
 type EditorPropps = {
-  content: string;
-  onContent: (content: string) => void;
-};
+  content: string
+  onContent: (content: string) => void
+}
 
 export default function Editor({ content, onContent }: EditorPropps) {
   // const content = `test`;
@@ -26,14 +25,14 @@ export default function Editor({ content, onContent }: EditorPropps) {
       Superscript,
       SubScript,
       Highlight,
-      TextAlign.configure({ types: ["heading", "paragraph"] }),
+      TextAlign.configure({ types: ['heading', 'paragraph'] }),
     ],
     content,
-  });
+  })
 
   const handleOk = () => {
-    onContent(editor?.getHTML() || "");
-  };
+    onContent(editor?.getHTML() || '')
+  }
 
   return (
     <>
@@ -82,5 +81,5 @@ export default function Editor({ content, onContent }: EditorPropps) {
       </RichTextEditor>
       <BtnConfirm onOk={handleOk} />
     </>
-  );
+  )
 }

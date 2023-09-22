@@ -1,11 +1,11 @@
-import { useRouter } from "next/router";
-import { Box, Button, Title } from "@mantine/core";
+import { useRouter } from 'next/router'
+import { Box, Button, Title } from '@mantine/core'
 
 export default function Main() {
-  const router = useRouter();
+  const router = useRouter()
   const handleMoveEditor = () => {
-    router.push(`/editor`);
-  };
+    router.push(`/editor`)
+  }
 
   return (
     <>
@@ -18,5 +18,5 @@ export default function Main() {
         </Button>
       </Box>
     </>
-  );
+  )
 }

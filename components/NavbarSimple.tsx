@@ -1,7 +1,7 @@
-import { useState } from "react";
-import Link from "next/link";
-import { useRouter } from "next/router";
-import { Group, Code } from "@mantine/core";
+import { useState } from 'react'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
+import { Group, Code } from '@mantine/core'
 import {
   IconBellRinging,
   IconFingerprint,
@@ -14,25 +14,25 @@ import {
   IconLogout,
   IconHomeMove,
   IconBrandVscode,
-} from "@tabler/icons-react";
-import { MantineLogo } from "@mantine/ds";
-import classes from "./NavbarSimple.module.css";
+} from '@tabler/icons-react'
+import { MantineLogo } from '@mantine/ds'
+import classes from './NavbarSimple.module.css'
 
 const data = [
-  { link: "/", label: "Home", icon: IconHomeMove },
-  { link: "/editor", label: "Editor", icon: IconBrandVscode },
-  { link: "", label: "Notifications", icon: IconBellRinging },
-  { link: "", label: "Billing", icon: IconReceipt2 },
-  { link: "", label: "Security", icon: IconFingerprint },
-  { link: "", label: "SSH Keys", icon: IconKey },
-  { link: "", label: "Databases", icon: IconDatabaseImport },
-  { link: "", label: "Authentication", icon: Icon2fa },
-  { link: "", label: "Other Settings", icon: IconSettings },
-];
+  { link: '/', label: 'Home', icon: IconHomeMove },
+  { link: '/editor', label: 'Editor', icon: IconBrandVscode },
+  { link: '', label: 'Notifications', icon: IconBellRinging },
+  { link: '', label: 'Billing', icon: IconReceipt2 },
+  { link: '', label: 'Security', icon: IconFingerprint },
+  { link: '', label: 'SSH Keys', icon: IconKey },
+  { link: '', label: 'Databases', icon: IconDatabaseImport },
+  { link: '', label: 'Authentication', icon: Icon2fa },
+  { link: '', label: 'Other Settings', icon: IconSettings },
+]
 
 export function NavbarSimple() {
-  const router = useRouter();
-  const [active, setActive] = useState("Home");
+  const router = useRouter()
+  const [active, setActive] = useState('Home')
 
   const links = data.map((item) => (
     <Link
@@ -41,15 +41,15 @@ export function NavbarSimple() {
       href={item.link}
       key={item.label}
       onClick={(event) => {
-        event.preventDefault();
-        setActive(item.label);
-        router.push(item.link);
+        event.preventDefault()
+        setActive(item.label)
+        router.push(item.link)
       }}
     >
       <item.icon className={classes.linkIcon} stroke={1.5} />
       <span>{item.label}</span>
     </Link>
-  ));
+  ))
 
   return (
     <nav className={classes.navbar}>
@@ -81,5 +81,5 @@ export function NavbarSimple() {
         </a>
       </div>
     </nav>
-  );
+  )
 }

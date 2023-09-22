@@ -1,8 +1,8 @@
-import { Box, Button } from "@mantine/core";
+import { Box, Button } from '@mantine/core'
 
 type BtnConfirmProps = {
-  onOk: () => void;
-};
+  onOk: () => void
+}
 
 export default function BtnConfirm({ onOk }: BtnConfirmProps) {
   return (
@@ -13,5 +13,5 @@ export default function BtnConfirm({ onOk }: BtnConfirmProps) {
         </Button>
       </Box>
     </>
-  );
+  )
 }

@@ -1,13 +1,13 @@
-import { useEffect, useState } from "react";
-import { Box, Title } from "@mantine/core";
-import Editor from "@/components/Editor";
+import { useEffect, useState } from 'react'
+import { Box, Title } from '@mantine/core'
+import Editor from '@/components/Editor'
 
 export default function Index() {
-  const [content, setContent] = useState(`test`);
+  const [content, setContent] = useState(`test`)
 
   useEffect(() => {
-    console.log(content);
-  }, [content]);
+    console.log(content)
+  }, [content])
 
   return (
     <>
@@ -18,5 +18,5 @@ export default function Index() {
         <Editor content={content} onContent={setContent} />
       </Box>
     </>
-  );
+  )
 }

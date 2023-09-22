@@ -1,6 +1,6 @@
-import type { LayoutRouteProps } from "react-router-dom";
-import { Box } from "@mantine/core";
-import { NavbarSimple } from "./NavbarSimple";
+import type { LayoutRouteProps } from 'react-router-dom'
+import { Box } from '@mantine/core'
+import { NavbarSimple } from './NavbarSimple'
 
 export default function Layout({ children }: LayoutRouteProps) {
   return (
@@ -10,5 +10,5 @@ export default function Layout({ children }: LayoutRouteProps) {
         <main style={{ width: `100vw` }}>{children}</main>
       </Box>
     </>
-  );
+  )
 }
