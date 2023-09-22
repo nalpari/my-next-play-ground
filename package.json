@@ -9,12 +9,34 @@
     "lint": "next lint"
   },
   "dependencies": {
+    "@mantine/code-highlight": "^7.0.0",
+    "@mantine/core": "^7.0.0",
+    "@mantine/ds": "^7.0.0",
+    "@mantine/form": "^7.0.0",
+    "@mantine/hooks": "^7.0.0",
+    "@mantine/tiptap": "^7.0.0",
+    "@tabler/icons-react": "^2.34.0",
+    "@tiptap/extension-highlight": "^2.1.11",
+    "@tiptap/extension-link": "^2.1.11",
+    "@tiptap/extension-subscript": "^2.1.11",
+    "@tiptap/extension-superscript": "^2.1.11",
+    "@tiptap/extension-text-align": "^2.1.11",
+    "@tiptap/extension-underline": "^2.1.11",
+    "@tiptap/pm": "^2.1.11",
+    "@tiptap/react": "^2.1.11",
+    "@tiptap/starter-kit": "^2.1.11",
     "@types/node": "20.6.3",
     "@types/react": "18.2.22",
     "@types/react-dom": "18.2.7",
     "next": "13.5.2",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-router-dom": "^6.16.0",
     "typescript": "5.2.2"
+  },
+  "devDependencies": {
+    "postcss": "^8.4.30",
+    "postcss-preset-mantine": "^1.7.0",
+    "postcss-simple-vars": "^7.0.1"
   }
 }
