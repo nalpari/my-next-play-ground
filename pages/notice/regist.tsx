@@ -3,8 +3,8 @@ import { Box, Input, Title } from '@mantine/core'
 import Editor from '@/components/Editor'
 
 export default function Regist() {
-  const [title, setTitle] = useState('')
-  const [content, setContent] = useState('')
+  const [title, setTitle] = useState<string>('')
+  const [content, setContent] = useState<string>('')
 
   const handleSubmit = (cont: string) => {
     console.log('🚀 ~ file: index.tsx:7 ~ Index ~ title:', title)
