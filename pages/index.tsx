@@ -14,7 +14,7 @@ export default function Main() {
       </Box>
       <Box px={`xl`}>
         <Button variant={`filled`} onClick={handleMoveEditor}>
-          Editor 이동
+          Editor 이동 예제
         </Button>
       </Box>
     </>

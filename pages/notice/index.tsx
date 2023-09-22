@@ -1,6 +1,6 @@
+import { useRouter } from 'next/router'
 import { Box, Button, Table, Title } from '@mantine/core'
 import dayjs from 'dayjs'
-import { useRouter } from 'next/router'
 
 const elements = [
   { position: 6, mass: 12.011, symbol: 'C', name: 'Carbon' },
