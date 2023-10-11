@@ -1,14 +1,21 @@
 import { useState } from 'react'
 import { Box, Input, Title } from '@mantine/core'
 import Editor from '@/components/Editor'
+import axios from 'axios'
 
 export default function Regist() {
   const [title, setTitle] = useState<string>('')
   const [content, setContent] = useState<string>('')
 
-  const handleSubmit = (cont: string) => {
+  const handleSubmit = async (cont: string) => {
     console.log('🚀 ~ file: index.tsx:7 ~ Index ~ title:', title)
     console.log('🚀 ~ file: index.tsx:7 ~ Index ~ content:', cont)
+    const data = {
+          title,
+          content: cont,
+        }
+    const result = await axios.post('/api/add-notice', data)
+    console.log(result)
   }
 
   return (
