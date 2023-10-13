@@ -1,4 +1,3 @@
-import { useEffect, useState } from 'react'
 import type { AppProps } from 'next/app'
 import { useRouter } from 'next/router'
 import { MantineProvider, createTheme } from '@mantine/core'
