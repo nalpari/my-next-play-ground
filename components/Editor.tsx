@@ -12,7 +12,7 @@ import '@mantine/tiptap/styles.css'
 
 type EditorPropps = {
   content: string
-  onContent: (content: string) => void
+  onContent?: (content: string) => void
   onProcess: (content: string) => void
 }
 

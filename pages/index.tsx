@@ -1,10 +1,10 @@
- import { useRouter } from 'next/router'
+import { useRouter } from 'next/router'
 import { Box, Button, Title } from '@mantine/core'
 
 export default function Main() {
   const router = useRouter()
   const handleMoveEditor = () => {
-    router.push(`/editor`)
+    router.push(`/editor`).then((r) => console.log(r))
   }
 
   return (

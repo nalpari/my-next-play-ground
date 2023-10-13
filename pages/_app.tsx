@@ -1,6 +1,6 @@
 import type { AppProps } from 'next/app'
 import { useRouter } from 'next/router'
-import { MantineProvider, createTheme } from '@mantine/core'
+import { createTheme, MantineProvider } from '@mantine/core'
 import Layout from '@/components/Layout'
 
 import '@mantine/core/styles.css'

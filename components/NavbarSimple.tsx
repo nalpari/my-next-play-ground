@@ -1,20 +1,20 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-import { Group, Code } from '@mantine/core'
+import { Code, Group } from '@mantine/core'
 import {
-  IconBellRinging,
-  IconFingerprint,
-  IconKey,
-  IconSettings,
   Icon2fa,
-  IconDatabaseImport,
-  IconReceipt2,
-  IconSwitchHorizontal,
-  IconLogout,
-  IconHomeMove,
+  IconBellRinging,
   IconBrandVscode,
+  IconDatabaseImport,
+  IconFingerprint,
+  IconHomeMove,
+  IconKey,
+  IconLogout,
   IconNews,
+  IconReceipt2,
+  IconSettings,
+  IconSwitchHorizontal,
 } from '@tabler/icons-react'
 import { MantineLogo } from '@mantine/ds'
 import classes from './NavbarSimple.module.css'

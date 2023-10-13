@@ -11,9 +11,9 @@ export default function Regist() {
     console.log('🚀 ~ file: index.tsx:7 ~ Index ~ title:', title)
     console.log('🚀 ~ file: index.tsx:7 ~ Index ~ content:', cont)
     const data = {
-          title,
-          content: cont,
-        }
+      title,
+      content: cont,
+    }
     const result = await axios.post('/api/add-notice', data)
     console.log(result)
   }

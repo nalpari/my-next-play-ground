@@ -11,7 +11,7 @@ datasource db {
 }
 
 model notice {
-  id       Int      @id @default(autoincrement())
+  id        Int      @id @default(autoincrement())
   title     String
   content   String
   createdAt DateTime @default(now())
