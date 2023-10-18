@@ -22,7 +22,7 @@ export default function Index() {
   ))
 
   const handleRegist = () => {
-    router.push(`/notice/regist`)
+    router.push(`/notice/regist`).then((r) => console.log(r))
   }
 
   return (
